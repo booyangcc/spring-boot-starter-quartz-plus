@@ -15,7 +15,6 @@ import org.springframework.stereotype.Component;
 public class TestSchedulerJob extends BaseSchedulerJob {
     // SchedulerJobConfig 配置定时任务执行时间以及执行类
     public TestSchedulerJob() {
-        //   影像的group为 枚举类SchedulerJobGroupEnum，比如影像：IMAGE("image", "影像"),
         // 通过jobName， jobGroup唯一确定一个任务
         super(new SchedulerJobConfig("testJob", "testGroup", "*/10 * * * * ?", TestSchedulerJob.class));
     }
