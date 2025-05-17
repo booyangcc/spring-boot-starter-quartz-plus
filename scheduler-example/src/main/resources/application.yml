@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: my-app
+  datasource:
+    url: jdbc:mysql://43.128.30.62:3306/siqi?useSSL=false&serverTimezone=UTC&characterEncoding=utf8
+    username: siqi
+    password: yang1995
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
